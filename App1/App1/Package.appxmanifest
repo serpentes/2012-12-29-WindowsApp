@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="a4291009-90d1-45d0-a860-34eb5af1efcc" Publisher="CN=snake" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>App1</DisplayName>
+    <PublisherDisplayName>snake</PublisherDisplayName>
+    <Logo>Assets\storebook.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="App1.App">
+      <VisualElements DisplayName="App1" Logo="Assets\booklogo.png" SmallLogo="Assets\smallbook.png" Description="App1" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\book.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
