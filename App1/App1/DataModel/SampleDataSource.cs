@@ -257,12 +257,12 @@ namespace App1.Data
         public SampleDataSource()
         {
             String ITEM_CONTENT = String.Format("Item Content: {0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}\n\n{0}",
-                        "Curabitur class aliquam vestibulum nam curae maecenas sed integer cras phasellus suspendisse quisque donec dis praesent accumsan bibendum pellentesque condimentum adipiscing etiam consequat vivamus dictumst aliquam duis convallis scelerisque est parturient ullamcorper aliquet fusce suspendisse nunc hac eleifend amet blandit facilisi condimentum commodo scelerisque faucibus aenean ullamcorper ante mauris dignissim consectetuer nullam lorem vestibulum habitant conubia elementum pellentesque morbi facilisis arcu sollicitudin diam cubilia aptent vestibulum auctor eget dapibus pellentesque inceptos leo egestas interdum nulla consectetuer suspendisse adipiscing pellentesque proin lobortis sollicitudin augue elit mus congue fermentum parturient fringilla euismod feugiat");
+                        "?");
 			
 
             var group1 = new SampleDataGroup("1",
-                    "All Books",
-                    "All the book we have",
+                    "所有旅行的書",
+                    "一覽，目前流浪等待浪漫的所有書籍。",
                     "Assets/MediumGray.png",
                     "no use :(");
             group1.Items.Add(new SampleDataItem("1-1",
@@ -275,12 +275,19 @@ namespace App1.Data
             this.AllGroups.Add(group1);
 
             var group2 = new SampleDataGroup("2",
-                    "我門家的書櫃",
+                    "我家書櫃",
                     "您的書想旅行嗎？",
                     "Assets/MediumGray.png",
                     "no use :(");
             group2.Items.Add(new SampleDataItem("2-1",
-                    "書名",
+                    "我有新的書想旅行！",
+                    "新增成員進書櫃",
+                    "Assets/MediumGray.png",
+                    "請輸入書名、作者、書況等各種資料",
+                    "啦啦啦",
+                    group2));
+			group2.Items.Add(new SampleDataItem("2-2",
+                    "樓下的房客",
                     "一行說明",
                     "Assets/MediumGray.png",
                     "多行說明",
@@ -290,7 +297,7 @@ namespace App1.Data
             this.AllGroups.Add(group2);
 
             var group3 = new SampleDataGroup("3",
-                    "旅行初衷和步伐",
+                    "旅行的初衷",
                     "旅行和夢想都是無遠弗屆的！",
                     "Assets/MediumGray.png",
                     "here no use :P");
@@ -299,31 +306,53 @@ namespace App1.Data
                     "旅行的最開始的理念",
                     "Assets/DarkGray.png",
                     "旅行，有一個起點，帶著期望，等待邂逅。",
-					"在這個電子化的世代，你還理解書籍的本質嗎？\n再也不看的書是否已經逐漸淪為丟也不捨、留也無用的遺憾？\n\n讓你的夢想和書一同往世界的各個角落去吧！\n生命都是地球上的一份子，不如以往健康的環境，正需要我們重視森林和大氣的重要性，\n書本的重要性正因為電子化逐漸下滑，書不再需要被出版，\n這是我們體諒環境的方式，也是忘卻紙張觸感的遺憾，\n愛惜你仍擁有的書籍，那些你再也不翻，卻又捨不得丟棄的書，請讓我們賦予他旅行的義務，\n帶著一份體諒在另外一個人手上復活。\n以交換的方式，重新珍惜書籍。",
+					"在這個電子化的世代，你還理解書籍的本質嗎？\n再也不看的書是否已經逐漸淪為丟也不捨、留也無用的遺憾？\n\n讓你的夢想和書一同往世界的各個角落去吧！\n地球不如以往健康的環境，正需要我們重視森林和大氣的重要性，\n書本的重要性正因為電子化逐漸下滑，書不再需要被出版，\n這是我們體諒環境的方式，也是忘卻紙張觸感的遺憾，\n那些你再也不翻，卻又捨不得丟棄的書，請讓我們賦予他旅行的義務，\n\n帶著一份體諒在另外一個人手上復活。\n以交換的方式，重新珍惜書籍。\n\n\n由四個愛看書的女孩子共同研究開發，\n與其讓你的櫃子裡的書沾滿灰塵，不如就夾張漂亮的書籤，\n將這本書曾經帶給你的感動，旅行到下一個愛書人士的心理吧！\n\n\n",
                     group3));
             group3.Items.Add(new SampleDataItem("3-2",
                     "旅行的機票",
                     "如何讓你的書去旅行？幫他訂張機票吧！",
                     "Assets/DarkGray.png",
-                    "細項重點",
-                    "內文在這裡",
+                    "旅行的方式有很多種，請讓我為您敘述其中奧妙！",
+                    "【行前說明會】\n我們訂作這個個平台，\n讓你可以更新自己擁有的書籍、\n搜尋他人擁有的書籍\n或搜尋所在地附近有何種書籍，\n\n並且附上書評和推薦度，\n讓不常看書的你，可以透過大眾的評價謹慎選擇適合自己的讀物，\n而書籍狂熱者的你，可以為你所愛的類別撰寫，邂逅身處他方的同好。\n\n\n【注意事項】\n這是一個基於交流、捐獻二手書而成立的平台！\n\n01. 以捐贈為主。可自由做協議，需取得共識。\n02. 請對自己的二手書負責！將摺痕和汙損確實寫明！\n03. 約定交換請不要隨意變更，本系統設有黑名單。\n04.\n05.\n06.\n\n\n",
                     group3));
-            this.AllGroups.Add(group3);
+            group3.Items.Add(new SampleDataItem("3-3",
+                    "以自由為主的行程表",
+                    "旅行即將開始，你準備好了嗎？",
+                    "Assets/DarkGray.png",
+                    "讓我一一為你說明！",
+                    "【你的書櫃】\n由此處新增你擁有的書籍，你家的書出去旅行的各個停駐點，都會更新在此處。\n\n\n【All Books】\n平台上所有的書籍都在這裡，\n\n誰更新了書籍？目前有多少書？\n\n通通都會在這裡即時顯示，\n你可以從這裡挑選喜歡的書目，進而去詢問這本書目前旅行到哪裡？\n\n",
+                    group3));
+			group3.Items.Add(new SampleDataItem("3-4",
+                    "個人資料設定",
+                    "旅行是隨興的，但希望各位行事順利！",
+                    "Assets/DarkGray.png",
+                    "為了讓你的書旅行順利，這邊需要你的部分資料唷",
+                    "【暱稱】\n【信箱】\n【個人書庫位置】\n\n\n",
+                    group3));
+			this.AllGroups.Add(group3);
 
             var group4 = new SampleDataGroup("4",
-                    "旅行的規則",
-                    "重新來規劃一下你的行程:P",
+                    "尋找旅行中的書！",
+                    "究竟有多少書等著你的邂逅呢？:P",
                     "Assets/MediumGray.png",
                     "here no use :P");
             group4.Items.Add(new SampleDataItem("4-1",
-                    "說明標題",
-                    "一行說明簡介",
-                    "Assets/LightGray.png",
-                    "浪漫簡介",
-                    "好多內文在這裡",
+                    "尋找旅行中的書",
+                    "看看身邊，有多少書等著你？",
+                    "Assets/DarkGray.png",
+                    "用地圖定位，搜尋附近有哪些書籍在等待邂逅呢？",
+                    "等待更新\n\n",
                     group4));
-     
+			group4.Items.Add(new SampleDataItem("4-2",
+                    "問題回報",
+                    "您好，有以下問題這邊可以回報！",
+                    "Assets/LightGray.png",
+                    "我們將盡快為你處理:)",
+                    "【有以下狀況請回報給我們，讓系統改善的更加好用:D】\n01. 無法遵守旅行約定者。\n02. 書籍多處損壞無據實以報。\n03.出言不遜、態度惡劣者。\n04.資料錯誤\n05.系統問題\n06.\n\n\n",
+                    group4));
+			
             this.AllGroups.Add(group4);
+			
         }
     }
 }
