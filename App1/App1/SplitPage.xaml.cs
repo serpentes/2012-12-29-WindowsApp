@@ -26,6 +26,10 @@ namespace App1
     /// </summary>
     public sealed partial class SplitPage : App1.Common.LayoutAwarePage
     {
+        string groupId;
+        SampleDataGroup group;
+        SampleDataSource sample = new SampleDataSource();
+
         public SplitPage()
         {
             this.InitializeComponent();
@@ -45,10 +49,10 @@ namespace App1
         protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
             // TODO: 為您的問題領域建立適合的資料模型，以取代資料範例
-            var group = SampleDataSource.GetGroup((String)navigationParameter);
+            group = SampleDataSource.GetGroup((String)navigationParameter);
             this.DefaultViewModel["Group"] = group;
             this.DefaultViewModel["Items"] = group.Items;
-
+            groupId = group.UniqueId;
             if (pageState == null)
             {
                 this.itemListView.SelectedItem = null;
@@ -186,5 +190,30 @@ namespace App1
         }
 
         #endregion
+
+        
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            group.Items.Add(new SampleDataItem("Group-7-Item-1",
+                   "Item Title: 1",
+                   "Item Subtitle: 1",
+                   "Assets/LightGray.png",
+                   "Item Description: Pellentesque porta.",
+                   "123",
+                   group));
+
+
+            /*cc.AllGroups.Add(group);*/
+
+            /*var md = new MessageDialog(test);
+            md.ShowAsync();*/
+
+
+            this.Frame.Navigate(typeof(SplitPage), groupId);
+        }
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ItemsPage), "AllGroups");
+        }
     }
 }
