@@ -221,7 +221,7 @@ namespace App1.Data
     /// SampleDataSource 是以預留位置資料初始化，而不是以即時生產環境
     /// 資料初始化，以便能夠於設計階段和執行階段提供範例資料。
     /// </summary>
-    public sealed class SampleDataSource
+    public class SampleDataSource
     {
         private static SampleDataSource _sampleDataSource = new SampleDataSource();
 

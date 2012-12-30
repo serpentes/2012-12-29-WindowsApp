@@ -47,7 +47,7 @@
             </Grid.ColumnDefinitions>
             <Button
                 x:Name="backButton"
-                Click="GoBack"
+                Click="Button_Click_2"
                 IsEnabled="{Binding DefaultViewModel.CanGoBack, ElementName=pageRoot}"
                 Style="{StaticResource BackButtonStyle}"/>
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{Binding Title}" Style="{StaticResource PageHeaderTextStyle}"/>
@@ -97,6 +97,7 @@
                 <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Margin="0,20,0,0" Text="{Binding Content}" Style="{StaticResource BodyTextStyle}"/>
             </Grid>
         </ScrollViewer>
+        <Button x:Name="addItem" Content="新增" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="510,81,0,0" Click="Button_Click_1" FontSize="18" Height="49"/>
 
         <VisualStateManager.VisualStateGroups>
 
