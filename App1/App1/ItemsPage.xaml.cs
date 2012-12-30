@@ -58,7 +58,18 @@ namespace App1
             // 巡覽至適用的目的頁面，設定新的頁面
             // 方式是透過傳遞必要資訊做為巡覽參數
             var groupId = ((SampleDataGroup)e.ClickedItem).UniqueId;
-            this.Frame.Navigate(typeof(SplitPage), groupId);
+            if (groupId == "2")
+            {
+                this.Frame.Navigate(typeof(MyBooksPage), groupId);
+            }
+            else if (groupId == "4")
+            {
+                this.Frame.Navigate(typeof(SearchPage), groupId);
+            }
+            else
+            {
+                this.Frame.Navigate(typeof(SplitPage), groupId);
+            }
         }
 
     }

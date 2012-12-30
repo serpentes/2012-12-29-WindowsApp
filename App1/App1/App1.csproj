@@ -110,6 +110,12 @@
     <Compile Include="ItemsPage.xaml.cs">
       <DependentUpon>ItemsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyBooksPage.xaml.cs">
+      <DependentUpon>MyBooksPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SplitPage.xaml.cs">
       <DependentUpon>SplitPage.xaml</DependentUpon>
     </Compile>
@@ -126,17 +132,25 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="Assets\Books%27 Travel.metrop" />
     <None Include="Common\ReadMe.txt" />
     <None Include="App1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\AllBooks.png" />
     <Content Include="Assets\back.png" />
     <Content Include="Assets\book.png" />
     <Content Include="Assets\booklogo.png" />
+    <Content Include="Assets\booklogo_long.png" />
     <Content Include="Assets\dark_stars_anime_girls_desktop_2480x1753_wallpaper-1100637.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Default.png" />
+    <Content Include="Assets\Idea.png" />
     <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\MyBooks.png" />
+    <Content Include="Assets\Open.png" />
+    <Content Include="Assets\Search.png" />
     <Content Include="Assets\smallbook.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
@@ -158,6 +172,14 @@
     <Page Include="ItemsPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MyBooksPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SplitPage.xaml">
       <Generator>MSBuild:Compile</Generator>

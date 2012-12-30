@@ -263,7 +263,7 @@ namespace App1.Data
             var group1 = new SampleDataGroup("1",
                     "所有旅行的書",
                     "一覽，目前流浪等待浪漫的所有書籍。",
-                    "Assets/MediumGray.png",
+                    "Assets/AllBooks.png",
                     "no use :(");
             group1.Items.Add(new SampleDataItem("1-1",
                     "書名",
@@ -277,7 +277,7 @@ namespace App1.Data
             var group2 = new SampleDataGroup("2",
                     "我家書櫃",
                     "您的書想旅行嗎？",
-                    "Assets/MediumGray.png",
+                    "Assets/MyBooks.png",
                     "no use :(");
             group2.Items.Add(new SampleDataItem("2-1",
                     "我有新的書想旅行！",
@@ -299,7 +299,7 @@ namespace App1.Data
             var group3 = new SampleDataGroup("3",
                     "旅行的初衷",
                     "旅行和夢想都是無遠弗屆的！",
-                    "Assets/MediumGray.png",
+                    "Assets/Idea.png",
                     "here no use :P");
             group3.Items.Add(new SampleDataItem("3-1",
                     "初衷 - 起點",
@@ -334,7 +334,7 @@ namespace App1.Data
             var group4 = new SampleDataGroup("4",
                     "尋找旅行中的書！",
                     "究竟有多少書等著你的邂逅呢？:P",
-                    "Assets/MediumGray.png",
+                    "Assets/Search.png",
                     "here no use :P");
             group4.Items.Add(new SampleDataItem("4-1",
                     "這裡有旅行書嗎？",
